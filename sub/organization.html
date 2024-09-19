@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/common.css">
+
+  <!-- js -->
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap"><!--wrap-->
+    <header id="header"><!--header-->
+      <div class="inner">
+        <h1><a href="../index.html">명성디앤씨</a></h1>
+
+        <nav>
+          <ul class="gnb"><!--gnb-->
+            <li><a href="ceo.html">회사소개</a>
+              <ul class="depth2 dOne">
+                <li><a href="ceo.html">CEO인사말</a></li>
+                <li><a href="organization.html">조직구성</a></li>
+              </ul>
+            </li>
+            <li><a href="history.html">회사연혁</a>
+            </li>
+            <li><a href="business.html">사업영역</a>
+            </li>
+            <li><a href="business2.html">사업실적</a>
+            </li>
+            <li><a href="cs.html">고객센터</a>
+              <ul class="depth2 dTwo">
+                <li><a href="cs1.html">공지사항</a></li>
+                <li><a href="cs2.html">문의하기</a></li>
+                <li><a href="cs3.html">자주하는질문</a></li>
+              </ul>
+            </li>
+            <li><a href="come.html">오시는길</a>
+            </li>
+          </ul>
+
+          <div class="mgnb_wrap"><!--mgnb_wrap-->
+            <h2><img src="../img/main/login_logo.svg" alt="명성디앤씨"></h2>
+            <div class="mgnb_box">
+              <ul class="mgnb"><!--mgnb-->
+                <li class="mdepth"><a href="#" class="mdepthTxt">회사소개</a>
+                  <i class="bi bi-chevron-down"></i>
+                  <ul class="mdepth2">
+                    <li><a href="ceo.html">CEO인사말</a></li>
+                    <li><a href="organization.html">조직구성</a></li>
+                  </ul>
+                </li>
+                <li class="mdepth">
+                  <a href="history.html" class="mdepthTxt">회사연혁</a>
+                </li>
+                <li class="mdepth">
+                  <a href="business.html" class="mdepthTxt">사업영역</a>
+                </li>
+                <li class="mdepth">
+                  <a href="business2.html" class="mdepthTxt">사업실적</a>
+                </li>
+                <li class="mdepth">
+                  <a href="#" class="mdepthTxt">고객센터</a>
+                  <i class="bi bi-chevron-down"></i>
+                  <ul class="mdepth2">
+                    <li><a href="cs1.html">공지사항</a></li>
+                    <li><a href="cs2.html">문의하기</a></li>
+                    <li><a href="cs3.html">자주하는질문</a></li>
+                  </ul>
+                </li>
+                <li class="mdepth"><a href="#" class="mdepthTxt">오시는길</a>
+                </li>
+              </ul>
+            </div>
+            <button class="mgnb_close"><i class="bi bi-x-lg"></i></button>
+          </div>
+        </nav>
+
+        <div class="util"><!--util-->
+          <button class="btn_ham">전체 메뉴보기</button>
+          <button class="btn_sch"><span>검색창</span></button>
+          <a href="#" class="login">로그인</a>
+        </div>
+      </div>
+      <div class="dim one"></div>
+
+      <div class="search"><!--search-->
+        <form>
+          <fieldset>
+            <legend>검색영역</legend>
+            <div class="sch_box">
+              <input type="text" placeholder="검색">
+              <button type="button" class="delete"><span>삭제</span></button>
+              <button type="submit" class="sch_submit"></button>
+            </div>
+          </fieldset>
+        </form>
+        <button type="button" class="close"><span>닫기</span></button>
+      </div>
+      <div class="dim two"></div>
+
+      <div class="login-container"><!--login-->
+        <form class="login-form">
+          <fieldset>
+            <legend>로그인영역</legend>
+            <div class="login-logo">
+              <img src="../img/main/login_logo.svg" alt="명성디앤씨">
+            </div>
+            <div class="form-group id">
+              <label for="username">아이디</label>
+              <input type="text" name="username" id="username" placeholder="아이디" required>
+            </div>
+
+            <div class="form-group pw">
+              <label for="password">비밀번호</label>
+              <input type="password" name="password" id="password" placeholder="비밀번호">
+            </div>
+            <div class="form-check">
+              <div>
+                <input type="checkbox" class="form-check-input" id="check">
+                <label for="check" class="check">로그인 상태 유지</label>
+              </div>
+            </div>
+            <div class="login-button">
+              <div class="btn">
+                <input type="submit" value="로그인">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <div class="footer-info">
+          <ul>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+          </ul>
+        </div>
+        <button class="login_close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="dim three"></div>
+    </header>
+
+    <div id="container"><!--container-->
+      <div class="sub_visual bg2">
+      </div>
+
+      <div class="location"><!--location-->
+        <div class="inner_location">
+          <div class="home"><a href="../index.html"><img src="../img/sub/home.svg" alt="home"></a></div>
+          <div class="loca_link"><a href="#">회사소개</a>
+            <ul class="loca_depth2">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="history.html">회사연혁</a></li>
+              <li><a href="business.html">사업영역</a></li>
+              <li><a href="business2.html">사업실적</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+          </div>
+          <div class="loca_link"><a href="#">조직구성</a>
+            <ul class="loca_depth2">
+              <li><a href="ceo.html">CEO인사말</a></li>
+              <li><a href="organization.html">조직구성</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner"><!--inner-->
+        <div class="title" data-aos="fade-up">
+          <h2 class="headTit two">조직구성</h2>
+          <div class="tit_line two"></div>
+        </div>
+        <div class="txtBox org">
+          <h3 class="org_headTit" data-aos="fade-up">(주)명성디앤씨의 맨파워는 <span>업계 최고수준</span>으로
+            양적 · 질적으로 <span>압도적 인력구축</span>을 완비하였습니다</h3>
+          <div class="mainBg" data-aos="fade-up"></div>
+        </div>
+      </div>
+      <footer id="footer"><!--footer-->
+        <div class="inner">
+          <div class="footer_logo">
+            <a href="#"><img src="../img/main/footer_logo.svg" alt="명성디앤씨"></a>
+          </div>
+          <div>
+            <address><a href="tel:052-211-3800">Tel. 051-806-7650</a><a href="#"> | Fax. 051-806-7651</a>
+              <span class="add_mail">|ismind22@msdnc.pro</span>
+              <span class="add_txt1">부산광역시 동래구 금강로 137-1 명성빌딩 5층 ㅣ</span><br class="add_txtBr1">
+              <span class="add_txt2">부산시 정비사업전문관리업등록 제 51호 ㅣ</span><br class="add_txtBr2"> (법인)사업자등록번호 607-86-14691 ㅣ
+            </address>
+            <p class="copy">ⓒ 2014 (주)명성디앤씨</p>
+          </div>
+          <div class="footer_txt">
+            <ul class="footer_link">
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이용약관</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="go_top"><a href="#"><i class="bi bi-arrow-up"></i></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1500, });
+  </script>
+</body>
+
+</html>

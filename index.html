@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <title>명성디앤씨</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/common.css">
+
+  <!-- js -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap"><!--wrap-->
+    <header id="header"><!--header-->
+      <div class="inner">
+        <h1><a href="index.html">명성디앤씨</a></h1>
+
+        <nav>
+          <ul class="gnb"><!--gnb-->
+            <li><a href="sub/ceo.html">회사소개</a>
+              <ul class="depth2 dOne">
+                <li><a href="sub/ceo.html">CEO인사말</a></li>
+                <li><a href="sub/organization.html">조직구성</a></li>
+              </ul>
+            </li>
+            <li><a href="sub/history.html">회사연혁</a>
+            </li>
+            <li><a href="sub/business.html">사업영역</a>
+            </li>
+            <li><a href="sub/business2.html">사업실적</a>
+            </li>
+            <li><a href="sub/cs.html">고객센터</a>
+              <ul class="depth2 dTwo">
+                <li><a href="sub/cs1.html">공지사항</a></li>
+                <li><a href="sub/cs2.html">문의하기</a></li>
+                <li><a href="sub/cs3.html">자주하는질문</a></li>
+              </ul>
+            </li>
+            <li><a href="sub/come.html">오시는길</a>
+            </li>
+          </ul>
+
+          <div class="mgnb_wrap"><!--mgnb_wrap-->
+            <h2><img src="img/main/login_logo.svg" alt="명성디앤씨"></h2>
+            <div class="mgnb_box">
+              <ul class="mgnb"><!--mgnb-->
+                <li class="mdepth"><a href="#" class="mdepthTxt">회사소개</a>
+                  <i class="bi bi-chevron-down"></i>
+                  <ul class="mdepth2">
+                    <li><a href="sub/ceo.html">CEO인사말</a></li>
+                    <li><a href="sub/organization.html">조직구성</a></li>
+                  </ul>
+                </li>
+                <li class="mdepth">
+                  <a href="sub/history.html" class="mdepthTxt">회사연혁</a>
+                </li>
+                <li class="mdepth">
+                  <a href="sub/business.html" class="mdepthTxt">사업영역</a>
+                </li>
+                <li class="mdepth">
+                  <a href="sub/business2.html" class="mdepthTxt">사업실적</a>
+                </li>
+                <li class="mdepth">
+                  <a href="#" class="mdepthTxt">고객센터</a>
+                  <i class="bi bi-chevron-down"></i>
+                  <ul class="mdepth2">
+                    <li><a href="sub/cs1.html">공지사항</a></li>
+                    <li><a href="sub/cs2.html">문의하기</a></li>
+                    <li><a href="sub/cs3.html">자주하는질문</a></li>
+                  </ul>
+                </li>
+                <li class="mdepth"><a href="#" class="mdepthTxt">오시는길</a>
+                </li>
+              </ul>
+            </div>
+            <button class="mgnb_close"><i class="bi bi-x-lg"></i></button>
+          </div>
+        </nav>
+
+        <div class="util"><!--util-->
+          <button class="btn_ham">전체 메뉴보기</button>
+          <button class="btn_sch"><span>검색창</span></button>
+          <a href="#" class="login">로그인</a>
+        </div>
+      </div>
+      <div class="dim one"></div>
+
+      <div class="search"><!--search-->
+        <form>
+          <fieldset>
+            <legend>검색영역</legend>
+            <div class="sch_box">
+              <input type="text" placeholder="검색">
+              <button type="button" class="delete"><span>삭제</span></button>
+              <button type="submit" class="sch_submit"></button>
+            </div>
+          </fieldset>
+        </form>
+        <button type="button" class="close"><span>닫기</span></button>
+      </div>
+      <div class="dim two"></div>
+
+      <div class="login-container"><!--login-->
+        <form class="login-form">
+          <fieldset>
+            <legend>로그인영역</legend>
+            <div class="login-logo">
+              <img src="img/main/login_logo.svg" alt="명성디앤씨">
+            </div>
+            <div class="form-group id">
+              <label for="username">아이디</label>
+              <input type="text" name="username" id="username" placeholder="아이디" required>
+            </div>
+
+            <div class="form-group pw">
+              <label for="password">비밀번호</label>
+              <input type="password" name="password" id="password" placeholder="비밀번호">
+            </div>
+            <div class="form-check">
+              <div>
+                <input type="checkbox" class="form-check-input" id="check">
+                <label for="check" class="check">로그인 상태 유지</label>
+              </div>
+            </div>
+            <div class="login-button">
+              <div class="btn">
+                <input type="submit" value="로그인">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <div class="footer-info">
+          <ul>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+          </ul>
+        </div>
+        <button class="login_close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="dim three"></div>
+    </header>
+
+    <main id="main"><!-- main -->
+      <section id="banner">
+        <div class="swiper mb">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide mb1">
+              <div class="mb_txt">
+                <h2>부산시 <strong>No1.</strong>
+                  정비사업전문관리업체 <strong>명성디앤씨</strong>
+                </h2>
+              </div>
+            </li>
+            <li class="swiper-slide mb2">
+              <div class="mb_txt">
+                <h2>부산시 <strong>No1.</strong>
+                  정비사업전문관리업체 <strong>명성디앤씨</strong>
+                </h2>
+              </div>
+            </li>
+            <li class="swiper-slide mb3">
+              <div class="mb_txt">
+                <h2>부산시 <strong>No1.</strong>
+                  정비사업전문관리업체 <strong>명성디앤씨</strong>
+                </h2>
+              </div>
+            </li>
+          </ul>
+          <div class="mb_control">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="quickMenu"><!--quickMenu-->
+        <div class="inner">
+          <h2><strong>명성디앤씨</strong> 홈페이지를 방문해주신
+            여러분을 진심으로 환영합니다.
+          </h2>
+          <div class="quickMenu container">
+            <div class="quickMenuBg"></div>
+            <div class="quickMenuBox">
+              <ul class="quickMenu">
+                <li><a href="sub/ceo.html">회사소개</a></li>
+                <li><a href="sub/history.html">회사연혁</a></li>
+                <li><a href="#">문의하기</a></li>
+              </ul>
+              <ul class="quickMenu">
+                <li><a href="#">자주하는질문</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="introduce"><!--introduce-->
+        <div class="inner">
+          <dl class="introduceTitle" data-aos="fade-down">
+            <dt>
+              <a href="#"><img src="img/main/header_logo.svg" alt="명성디앤씨"></a>
+            </dt>
+            <dd>
+              <h2>“(주)명성디앤씨가 부산시 No.1으로 손꼽히는 이유”</h2>
+            </dd>
+          </dl>
+          <div class="introduce container">
+            <ul class="introduceList">
+              <li>
+                <div class="introduceBox" data-aos="fade-down">
+                  <div class="imgBox"></div>
+                  <div class="txtBox">
+                    <dl>
+                      <dt><span class="en">Trust and Passion</span>
+                        <strong>신뢰와 열정, 고객 중심의 마인드</strong>
+                      </dt>
+                      <dd>정비사업의 행정업무를 수행하는 것 뿐만 아니라
+                        조합과 조합원님의 권리와 이익을 대변하는 것이
+                        정비사업전문관리자의 역할이라는 신념으로
+                        업무에 임하고 있습니다.</dd>
+                    </dl>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="introduceBox" data-aos="fade-down">
+                  <div class="txtBox">
+                    <dl>
+                      <dt><span class="en">Specialist</span>
+                        <strong>정비사업 관련 각 분야 전문가</strong>
+                      </dt>
+                      <dd>저희 명성디앤씨는 정비사업과 관련된 각 분야 전문가들이
+                        의기를 투합하여 설립한 정비사업 전문관리 회사로서,
+                        부산지역에서 최초로 정비사업관리에 CM업무를 도입하여
+                        조합의 사업 성공을 견인하고 있습니다.</dd>
+                    </dl>
+                  </div>
+                  <div class="imgBox"></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="introduceBox" data-aos="fade-down">
+                  <div class="imgBox"></div>
+                  <div class="txtBox">
+                    <dl>
+                      <dt><span class="en">Success</span>
+                        <strong>성공을 보장하는 전문성과 노하우</strong>
+                      </dt>
+                      <dd>저희 회사의 가장 큰 장점은 사업의 성공을 보장할 수 있는
+                        전문성과 노하우를 갖추고 있는 것입니다.
+                        도시정비사업 다방면의 전문가로부터
+                        차별화된 정비사업관리 용역을 제공합니다.</dd>
+                    </dl>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="business" data-aos="fade-in"><!--business-->
+        <div class="inner">
+          <h2 data-aos="fade-down">사업영역</h2>
+          <p data-aos="fade-left">(주)명성디앤씨는 <strong>정비사업전문관리업자</strong>로서
+            성공적인 재개발·재건축사업의 완성을 위하여
+            업무를 위탁·대행하고, 포괄적인 자문·컨설팅을 제공하여
+            수많은 사업장의 성공적인 사업진행을 도맡아 진행하고 있습니다.</p>
+          <a href="sub/business.html" class="btn_more" data-aos="fade-right">사업영역</a>
+        </div>
+      </section>
+
+      <section id="performance"><!--performance-->
+        <div class="inner">
+          <h2 data-aos="fade-down">사업실적</h2>
+          <div class="swiper performance" data-aos="fade-left">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><a href="#"><img src="img/main/performanceImg1.png" alt="시민공원재정비촉진2-1구역"></a>
+                <dl>
+                  <dt><a href="#">시민공원재정비촉진2-1구역
+                      재개발정비사업</a></dt>
+                  <dd><span>구역면적:</span> 136,727.00㎡
+                    <span>신축세대:</span> 1,902
+                  </dd>
+                </dl>
+              </li>
+              <li class="swiper-slide"><a href="#"><img src="img/main/performanceImg2.png" alt="시민공원재정비촉진3구역"></a>
+                <dl>
+                  <dt><a href="#">시민공원재정비촉진3구역
+                      재개발정비사업</a></dt>
+                  <dd><span>구역면적:</span> 178,634.00㎡
+                    <span>신축세대:</span> 3,554
+                  </dd>
+                </dl>
+              </li>
+              <li class="swiper-slide"><a href="#"><img src="img/main/performanceImg3.png" alt="시민공원재정비촉진4구역"></a>
+                <dl>
+                  <dt><a href="#">시민공원재정비촉진4구역
+                      재개발정비사업</a></dt>
+                  <dd><span>구역면적:</span> 39,433.00㎡
+                    <span>신축세대:</span> 849
+                  </dd>
+                </dl>
+              </li>
+              <li class="swiper-slide"><a href="#"><img src="img/main/performanceImg4.png" alt="영도제1재정비촉진5구역"></a>
+                <dl>
+                  <dt><a href="#">영도제1재정비촉진5구역
+                      재개발정비사업</a></dt>
+                  <dd><span>구역면적:</span> 255,365.7㎡
+                    <span>신축세대:</span> 4,428
+                  </dd>
+                </dl>
+              </li>
+              <li class="swiper-slide"><a href="#"><img src="img/main/performanceImg5.png" alt="명장1구역"></a>
+                <dl>
+                  <dt><a href="#">명장1구역
+                      재개발정비사업</a></dt>
+                  <dd><span>구역면적:</span> 67,768.00㎡
+                    <span>신축세대:</span> 1,384
+                  </dd>
+                </dl>
+              </li>
+              <li class="swiper-slide"><a href="#"><img src="img/main/performanceImg6.png" alt="명륜3구역"></a>
+                <dl>
+                  <dt><a href="#">명륜3구역
+                      재개발정비사업</a></dt>
+                  <dd><span>구역면적:</span> 79,751.00㎡
+                    <span>신축세대:</span> 1,409
+                  </dd>
+                </dl>
+              </li>
+              <li class="swiper-slide"><a href="#"><img src="img/main/performanceImg7.png" alt="양정1구역"></a>
+                <dl>
+                  <dt><a href="#">양정1구역
+                      재개발정비사업</a></dt>
+                  <dd><span>구역면적:</span> 126,834.10㎡
+                    <span>신축세대:</span> 2,276
+                  </dd>
+                </dl>
+              </li>
+              <li class="swiper-slide"><a href="#"><img src="img/main/performanceImg8.png" alt="개금2구역"></a>
+                <dl>
+                  <dt><a href="#">개금2구역
+                      재개발정비사업</a></dt>
+                  <dd><span>구역면적:</span> 27,450.00㎡
+                    <span>신축세대:</span> 539
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+            <div class="per_control">
+              <div class="biz_prev"></div>
+              <div class="biz_next"></div>
+            </div>
+          </div>
+          <a href="sub/business2.html" class="btn_more" data-aos="fade-right">더보기</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer"><!--footer-->
+      <div class="inner">
+        <div class="footer_logo">
+          <a href="#"><img src="img/main/footer_logo.svg" alt="명성디앤씨"></a>
+        </div>
+        <div>
+          <address><a href="tel:052-211-3800">Tel. 051-806-7650</a><a href="#"> | Fax. 051-806-7651</a>
+            <span class="add_mail">|ismind22@msdnc.pro</span>
+            <span class="add_txt1">부산광역시 동래구 금강로 137-1 명성빌딩 5층 ㅣ</span><br class="add_txtBr1">
+            <span class="add_txt2">부산시 정비사업전문관리업등록 제 51호 ㅣ</span><br class="add_txtBr2"> (법인)사업자등록번호 607-86-14691 ㅣ
+          </address>
+          <p class="copy">ⓒ 2014 (주)명성디앤씨</p>
+        </div>
+        <div class="footer_txt">
+          <ul class="footer_link">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="go_top"><a href="#"><i class="bi bi-arrow-up"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1500, });
+  </script>
+</body>
+
+</html>

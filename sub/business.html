@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO인사말</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/common.css">
+
+  <!-- js -->
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap"><!--wrap-->
+    <header id="header"><!--header-->
+      <div class="inner">
+        <h1><a href="../index.html">명성디앤씨</a></h1>
+
+        <nav>
+          <ul class="gnb"><!--gnb-->
+            <li><a href="ceo.html">회사소개</a>
+              <ul class="depth2 dOne">
+                <li><a href="ceo.html">CEO인사말</a></li>
+                <li><a href="organization.html">조직구성</a></li>
+              </ul>
+            </li>
+            <li><a href="history.html">회사연혁</a>
+            </li>
+            <li><a href="business.html">사업영역</a>
+            </li>
+            <li><a href="business2.html">사업실적</a>
+            </li>
+            <li><a href="cs.html">고객센터</a>
+              <ul class="depth2 dTwo">
+                <li><a href="cs1.html">공지사항</a></li>
+                <li><a href="cs2.html">문의하기</a></li>
+                <li><a href="cs3.html">자주하는질문</a></li>
+              </ul>
+            </li>
+            <li><a href="come.html">오시는길</a>
+            </li>
+          </ul>
+
+          <div class="mgnb_wrap"><!--mgnb_wrap-->
+            <h2><img src="../img/main/login_logo.svg" alt="명성디앤씨"></h2>
+            <div class="mgnb_box">
+              <ul class="mgnb"><!--mgnb-->
+                <li class="mdepth"><a href="#" class="mdepthTxt">회사소개</a>
+                  <i class="bi bi-chevron-down"></i>
+                  <ul class="mdepth2">
+                    <li><a href="ceo.html">CEO인사말</a></li>
+                    <li><a href="organization.html">조직구성</a></li>
+                  </ul>
+                </li>
+                <li class="mdepth">
+                  <a href="history.html" class="mdepthTxt">회사연혁</a>
+                </li>
+                <li class="mdepth">
+                  <a href="business.html" class="mdepthTxt">사업영역</a>
+                </li>
+                <li class="mdepth">
+                  <a href="business2.html" class="mdepthTxt">사업실적</a>
+                </li>
+                <li class="mdepth">
+                  <a href="#" class="mdepthTxt">고객센터</a>
+                  <i class="bi bi-chevron-down"></i>
+                  <ul class="mdepth2">
+                    <li><a href="cs1.html">공지사항</a></li>
+                    <li><a href="cs2.html">문의하기</a></li>
+                    <li><a href="cs3.html">자주하는질문</a></li>
+                  </ul>
+                </li>
+                <li class="mdepth"><a href="#" class="mdepthTxt">오시는길</a>
+                </li>
+              </ul>
+            </div>
+            <button class="mgnb_close"><i class="bi bi-x-lg"></i></button>
+          </div>
+        </nav>
+
+        <div class="util"><!--util-->
+          <button class="btn_ham">전체 메뉴보기</button>
+          <button class="btn_sch"><span>검색창</span></button>
+          <a href="#" class="login">로그인</a>
+        </div>
+      </div>
+      <div class="dim one"></div>
+
+      <div class="search"><!--search-->
+        <form>
+          <fieldset>
+            <legend>검색영역</legend>
+            <div class="sch_box">
+              <input type="text" placeholder="검색">
+              <button type="button" class="delete"><span>삭제</span></button>
+              <button type="submit" class="sch_submit"></button>
+            </div>
+          </fieldset>
+        </form>
+        <button type="button" class="close"><span>닫기</span></button>
+      </div>
+      <div class="dim two"></div>
+
+      <div class="login-container"><!--login-->
+        <form class="login-form">
+          <fieldset>
+            <legend>로그인영역</legend>
+            <div class="login-logo">
+              <img src="../img/main/login_logo.svg" alt="명성디앤씨">
+            </div>
+            <div class="form-group id">
+              <label for="username">아이디</label>
+              <input type="text" name="username" id="username" placeholder="아이디" required>
+            </div>
+
+            <div class="form-group pw">
+              <label for="password">비밀번호</label>
+              <input type="password" name="password" id="password" placeholder="비밀번호">
+            </div>
+            <div class="form-check">
+              <div>
+                <input type="checkbox" class="form-check-input" id="check">
+                <label for="check" class="check">로그인 상태 유지</label>
+              </div>
+            </div>
+            <div class="login-button">
+              <div class="btn">
+                <input type="submit" value="로그인">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <div class="footer-info">
+          <ul>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+          </ul>
+        </div>
+        <button class="login_close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="dim three"></div>
+    </header>
+
+    <div id="container"><!--container-->
+      <div class="sub_visual bg4">
+      </div>
+
+      <div class="location"><!--location-->
+        <div class="inner_location">
+          <div class="home"><a href="../index.html"><img src="../img/sub/home.svg" alt="home"></a></div>
+          <div class="loca_link"><a href="#">사업영역</a>
+            <ul class="loca_depth2">
+              <li><a href="ceo.html">회사소개</a></li>
+              <li><a href="history.html">회사연혁</a></li>
+              <li><a href="#">사업영역</a></li>
+              <li><a href="business2.html">사업실적</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="inner"><!--inner-->
+        <div class="title" data-aos="fade-up">
+          <h2 class="headTit two">사업영역</h2>
+          <div class="tit_line two"></div>
+        </div>
+        <div class="inner_bus">
+          <h3 data-aos="fade-up">(주)명성디앤씨가 <span>부산시 No.1</span>으로 인정받은 사업영역입니다</h3>
+          <div class="mainBg" data-aos="fade-up"></div>
+          <div class="txtBox bus">
+            <dl data-aos="fade-up">
+              <dt>정비사업전문관리업</dt>
+              <dd><span>정비사업 전문관리업이란, 정비사업 시행 과정에서 조합의 비전문성을 보완함으로써 조합원의 권익을 보호하고 사업추진의 효율성을 도모하기 위하여 여러 분야의 전문지식을 갖춘
+                  인력의 도움을
+                  받을 수 있게 하기 위하여 도입된 제도입니다.</span>
+                <span>정비사업전문관리업자는 추진위원회 또는 조합으로부터 법에 명시된 업무를 위탁받아 수행하거나 이와 관련한 자문 등을 업으로 하는 회사를 뜻합니다.</span>
+                <span>(주)명성디앤씨는 정비사업전문관리업자로서 성공적인 재개발·재건축사업의 완성을 위하여 업무를 위탁·대행하고, 포괄적인 자문·컨설팅을 제공하여 수많은 사업장의 성공적인 사업진행을
+                  도맡아
+                  진행하고 있습니다.</span>
+              </dd>
+            </dl>
+            <dl data-aos="fade-up">
+              <dt>도시정비사업의 '절차사업'으로써 세가지 특징</dt>
+              <dd>
+                <span>다수의 재개발·재건축 구역에서 사업진행의 어려움을 겪고, 심한 경우 조합원 비용 부담이 증가하여 조합원 간의 내홍을 겪는 일을 많이 보셨을 겁니다.
+                  이러한 원인은 도시정비사업의 다음의 특징에서 비롯됩니다.</span>
+
+                <span>첫째, 법률이 정하는 도시정비사업의 절차를 빠짐없이 이행해야 합니다.
+                  둘째, 법률에 정하고 있는 절차는 많은 세부내용을 규정하고 있고, 어려운 법률적 문제와 얽혀있습니다.
+                  셋째, 만에 하나 중도에 하나의 절차라도 잘못 이행될 경우, 이전의 상태로 되돌려 다시 이행해야 하는 특이성이 있습니다.</span>
+
+                <span>아래의 &#60;개략적인 정비사업의 시행절차도&#62;에서도 알 수 있는 정비사업은 매우 많은 세부절차를 포함 단계를 거쳐야 합니다.
+                  전문적인 정비사업전문관리업자의 조력이 필요하고, 유능한 정비사업전문관리업자의 지원을 통해 성공적인 사업을 완성하시기를 기원합니다.</span>
+              </dd>
+            </dl>
+          </div>
+          <div class="num">
+            <h3 data-aos="fade-up">“(주)명성디앤씨가 <span>부산시 No.1</span>으로 손꼽히는 이유”</h3>
+            <ul>
+              <li data-aos="fade-up">
+                <div class="leftBox">
+                </div>
+                <div class="rightBox">
+                  <dl>
+                    <dt>사업지연 없는 신속한 인·허가 진행 및 입주지연사태 방지를 위한 각종이슈관리 업무 지원</dt>
+                    <dd>(주)명성디앤씨 사업실적이 확인할 수 있듯이 신속한 인허가 업무수행능력은 이미 부산시 최고임을 입증하였습니다.
+                      <span>우리 (주)명성디앤씨은 이에 멈추지 않고, 누적된 데이터와 노하우들을 바탕으로 신속한 사업진행을 위하여 조합과 조합원간의
+                        원활한 각종이슈관리를 지원하고 있습니다. 각 조합사업의 상황과 여건에 맞는 최적화된 솔루션을 제공하여 드립니다.</span>
+                    </dd>
+                  </dl>
+                </div>
+              </li>
+              <li data-aos="fade-up">
+                <div class="leftBox">
+                </div>
+                <div class="rightBox">
+                  <dl>
+                    <dt>공사비 원가관리 전담팀을 운영 중인 부산시 정비사업전문관리업체는 (주)명성디앤씨가 유일</dt>
+                    <dd>재개발·재건축 도시정비사업의 가치제고와 완성을 위해서는 한 단계 높은 전문성과 기술력이 필요합니다.
+                      우크라이나 전쟁 이후, 원자재가격 급등를 비롯한 공사비 및 사업성 관리의 중요성은 점차 커지고 있습니다.
+                      <span>(주)명성디앤씨만의 건설사업관리와 접목한 공사비 원가관리 전담팀이 관리 사업장마다 그 실력을 인정받고 있습니다.</span>
+                    </dd>
+                  </dl>
+                </div>
+              </li>
+              <li data-aos="fade-up">
+                <div class="leftBox">
+                </div>
+                <div class="rightBox">
+                  <dl>
+                    <dt>양적·질적 업계 최고 수준의 맨파워 구축 전문성 있는 인력을 배치하여 완벽한 업무수행</dt>
+                    <dd>(주)명성디앤씨가 업계 최고 수준의 맨파워을 지녔다고 평가받는 주요한 이유는 양적·질적으로 압도적인 인력규모를 완비했기
+                      때문입니다.<span> 건설업계 실무경험이 풍부한 시공사 출신, 건축사 출신, 도시계획 출신 등 다양한 인력풀을 통한 정비사업전문관리업
+                        조직 구성을 갖추어, 조합상황에 맞는 인력을 배치하고 완벽한 업무를 수행해내고 있습니다.</span>
+                    </dd>
+                  </dl>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="enf">
+            <h3 data-aos="fade-up">개략적인 정비사업의 시행절차도</h3>
+            <ul>
+              <li data-aos="fade-up">
+                <div class="leftBox"></div>
+                <div class="rightBox">
+                  <dl>
+                    <dt>1. 계획수립단계</dt>
+                    <dd>도시주거환경정비 기본방침 수립</dd>
+                    <dd>도시주거환경정비 기본계획 수립</dd>
+                    <dd>도시주거환경정비 기본계획 확정·고시</dd>
+                    <dd>정비구역의 지정</dd>
+                    <dd>정비계획 결정 및 정비구역 지정·고시</dd>
+                  </dl>
+                </div>
+              </li>
+              <li data-aos="fade-up">
+                <div class="leftBox"></div>
+                <div class="rightBox">
+                  <dl>
+                    <dt>2. 시행주체 구성단계</dt>
+                    <dd>조합설립추진위원회 구성 및 승인</dd>
+                    <dd>조합설립동의서 징구</dd>
+                    <dd>창립총회</dd>
+                    <dd>조합설립인가</dd>
+                    <dd>시공자선정</dd>
+                  </dl>
+                </div>
+              </li>
+              <li data-aos="fade-up">
+                <div class="leftBox"></div>
+                <div class="rightBox">
+                  <dl>
+                    <dt>3. 실행계획 수립단계</dt>
+                    <dd>건축심의</dd>
+                    <dd>사업시행인가</dd>
+                    <dd>종전·종후자산평가</dd>
+                    <dd>종합원 분양신청</dd>
+                    <dd>관리처분인가 고시</dd>
+                  </dl>
+                </div>
+              </li>
+              <li data-aos="fade-up">
+                <div class="leftBox"></div>
+                <div class="rightBox">
+                  <dl>
+                    <dt>4. 공사 및 완료단계</dt>
+                    <dd>이주 및 철거</dd>
+                    <dd>착공 및 일반분양</dd>
+                    <dd>준공인가 및 공사완료 고시</dd>
+                    <dd>토지분할 및 이전고시</dd>
+                    <dd>조합해산 및 청산</dd>
+                  </dl>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer"><!--footer-->
+      <div class="inner">
+        <div class="footer_logo">
+          <a href="#"><img src="../img/main/footer_logo.svg" alt="명성디앤씨"></a>
+        </div>
+        <div>
+          <address><a href="tel:052-211-3800">Tel. 051-806-7650</a><a href="#"> | Fax. 051-806-7651</a>
+            <span class="add_mail">|ismind22@msdnc.pro</span>
+            <span class="add_txt1">부산광역시 동래구 금강로 137-1 명성빌딩 5층 ㅣ</span><br class="add_txtBr1">
+            <span class="add_txt2">부산시 정비사업전문관리업등록 제 51호 ㅣ</span><br class="add_txtBr2"> (법인)사업자등록번호 607-86-14691 ㅣ
+          </address>
+          <p class="copy">ⓒ 2014 (주)명성디앤씨</p>
+        </div>
+        <div class="footer_txt">
+          <ul class="footer_link">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="go_top"><a href="#"><i class="bi bi-arrow-up"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1500, });
+  </script>
+</body>
+
+</html>
